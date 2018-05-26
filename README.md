@@ -14,6 +14,7 @@ An Introduction to libuv by nikhilm.
 
 4、中文文档 libuv中文教程.pdf
 
+在线阅读 https://github.com/luohaha/Chinese-uvbook
 
 
 
