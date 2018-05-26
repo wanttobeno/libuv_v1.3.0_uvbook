@@ -1,5 +1,6 @@
 import os
 import sys
+import string
 
 path=os.path.dirname(os.path.realpath(__file__))
 alllist=os.listdir(path)
@@ -22,10 +23,14 @@ for i in alllist:
 
         fwrite.write('add_executable (${PROJECT_NAME} ')
         for fileIn in os.listdir(destPath):
-            if(".c" in fileIn):
+            fileLower=fileIn.lower()
+            if(".c" in fileLower):
                 #print fileIn
                 fwrite.write(fileIn+" ")
-            elif(".cpp" in fileIn):
+            elif(".cc" in fileLower):
+                #print fileIn
+                fwrite.write(fileIn+" ")
+            elif(".cpp" in fileLower):
                 #print fileIn
                 fwrite.write(fileIn+" ")
             #print fileIn
